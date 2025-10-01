@@ -1,83 +1,139 @@
 <!--Guilhermy 2D 30/08/2025-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Mayhem</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-<section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-        <div class="container d-flex align-items-center">
-                <div class="col-4 d-flex justify-content-center">
-                        <img src="5235059_4bf7b88e7f475a5.webp" class="rounded-pill" alt="" width="1500" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                        <h2>Mayhem no rio</h2>
-                        <p class="p-2">No mês de maio, de 2025 do dia 3, uma cantora famosa chamada "Lady Gaga" 
-                            apresenta seu show caótico na praia de Copacabana.Trazendo hits famosos de sua carreira
-                             como "Bad Romance", "Poker Face", "Shallow" e "Die with a Smile", Lady Gaga cria um 
-                             show teatral mostrando uma luta interna entre a cantora e o alter ego dela, com 
-                             homenagens, como o Michael Jackson, metido no meio. fonte = G1"
-                        </p>
-                </div>
-        </div>
-</section>
+</head>
 
-<section id="galeria">
-        <h2 class="text-center pt-5">Galeria</h2>
-        <div class="container p-3 mt-3 fundo-galeria">
-
-                <div class="row justify-content-md-center">
-                        <div class="col-md-4">
-                                <img src="hq720.jpg" width="1500"
-                                        class="img-fluid rounded-5" loading="lazy">
-                        </div>
-                        <div class="col-md-4">
-                                <img src="97-lady-gaga-brasil.jpg.webp" width="1500" class="img-fluid rounded-5"
-                                        loading="lazy">
-                        </div>
-                </div>
-                <div class="row mt-4 justify-content-md-center">
-                        <div class="col-md-4">
-                                <img src="images-38-300x198.jpeg" width="1500" class="img-fluid rounded-5" loading="lazy">
-                        </div>
-                        <div class="col-md-4">
-                                <img src="download.webp" width="1500"
-                                        class="img-fluid rounded-5" loading="lazy">
-                        </div>
-                </div>
-         </div>
-</section>
-<section id="inicio" class="my-5">
-        <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                        <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                        <img src="images (1).jpeg" class="mb-3" width="563" height="278" loading="lazy">
-                        <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
-                </div>
-                <img src="images (2).jpeg" height="350" width="1500" alt=" imagem apresenta uma parte do show da Lady Gaga. Gritando Brazil, let`s go. " title="Mayhem no Brasil - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
-        </div>
-</section>
-
-<script src="script.js"></script>
 <body>
     <header class=" p-5">
-        
+
         <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="img/logo.png" class="nav-img" loading="lazy">
+            <img src="images.png"nav-img " loading="lazy">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-            <div id="acessibilidade" class="menu-acessibilidade">
-  <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
-  <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-  </div>
-</div>
-
-                
-   
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
                 </div>
+            </div>
         </nav>
-</header> 
+       
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="hq720.jpg" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#Mayhem"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+                <img src="" alt="A imagem apresenta uma coreográfia da música Poker Face em Copacabana" title="Lady Gaga - Poke Face / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+
+              </div>
+        </section>
+
+        <section id="Mayhem" class="my-5 pt-6 secao-Mayhem" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center ">
+                    <img src="artworks-vjPxMa6Uzy1mZzv0-tjKsEQ-t500x500.jpeg" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Oque foi "Mayhem no rio"?</h2>
+                    <p class="p-2">Mayhem no rio, foi um evento musical e artistico feito pela cantora Lady Gaga,
+                        ela fez um show promocional para ajudar a divulgar seu novo albúm Mayhem, mas não só isso,
+                        ela também mostrou a história de sua vida de forma treatal, mostrando temas como a depressão,
+                        luta interna, caos pessoal, etc.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="lady-gaga-1-1.webp"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Lady-Gaga-55-1.webp" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="imagem_2025-05-05_111218057.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="97-lady-gaga-brasil.jpg.webp"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Guilhermy Barbosa. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
